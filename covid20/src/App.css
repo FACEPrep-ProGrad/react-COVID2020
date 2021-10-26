@@ -21,7 +21,7 @@
   border-radius: 7 px;
 }
 
-:is(.overall .left p, .search :is(h2, p), .search .input svg) {
+:is(.overall .left p, .search :is(h2, p), .search .input svg, .states tr :is(th, td)) {
   color: #838b92;
   font-weight: 600;
 }
@@ -89,25 +89,46 @@
 }
 
 .tally .data:nth-child(2):hover {
-  background: #ddeaf7;
-}
-
-.tally .data:nth-child(3):hover {
   background: #cfffd9;
 }
 
-.tally .data:nth-child(4):hover {
+.tally .data:nth-child(3):hover {
   background: #f3f3f3;
 }
 
 .tally .data:nth-child(2) {
-  color: #65aeff;
-}
-
-.tally .data:nth-child(3) {
   color: #28e951;
 }
 
-.tally .data:nth-child(4) {
+.tally .data:nth-child(3) {
   color: #6f787f;
+}
+
+.states table {
+  text-align: center;
+  border-collapse: separate;
+  width: 100%;
+  border-spacing: 1vh;
+}
+
+.states table tr:nth-child(odd) {
+  background: #80808029;
+}
+
+.states table tr:nth-child(even) {
+  background: #dfdfdf3d;
+}
+
+.states table tr :is(td, th) {
+  height: 8vh;
+  border-radius: 10px;
+}
+
+.load {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #39b49a;
 }
